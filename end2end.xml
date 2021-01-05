@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QA Academy" parallel="tests">
+    <listeners>
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
+    <test name="Test 1">
+        <classes>
+            <class name="tests.LandingPageTest"/>
+        </classes>
+    </test>
+    <test name="Login">
+        <classes>
+            <class name="tests.LoginPageTest"/>
+        </classes>
+    </test>
+    <test name="Validate">
+        <classes>
+            <class name="tests.ValidateNavBar"/>
+        </classes>
+    </test>
+</suite>
